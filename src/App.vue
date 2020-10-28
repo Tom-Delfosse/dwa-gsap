@@ -9,12 +9,12 @@
 import {
   defineComponent,
   // Lifecycle hooks
-  // onBeforeMount,
-  // onMounted,
-  // onBeforeUpdate,
-  // onUpdated,
-  // onBeforeUnmount,
-  // onUnmounted,
+  onBeforeMount,
+  onMounted,
+  onBeforeUpdate,
+  onUpdated,
+  onBeforeUnmount,
+  onUnmounted,
 } from 'vue'
 import { useRoute } from 'vue-router'
 import ChromeNav from '@/components/chrome/Nav.vue'
@@ -27,26 +27,26 @@ export default defineComponent({
     const route = useRoute()
 
     // Lifecycle hooks
-    // console.log('app:setup')
+    console.log('app:setup')
 
-    // onBeforeMount(() => {
-    //   console.log('app:onBeforeMount')
-    // })
-    // onMounted(() => {
-    //   console.log('app:onMounted')
-    // })
-    // onBeforeUpdate(() => {
-    //   console.log('app:onBeforeUpdate')
-    // })
-    // onUpdated(() => {
-    //   console.log('app:onUpdated')
-    // })
-    // onBeforeUnmount(() => {
-    //   console.log('app:onBeforeUnmount')
-    // })
-    // onUnmounted(() => {
-    //   console.log('app:onUnmounted')
-    // })
+    onBeforeMount(() => {
+      console.log('app:onBeforeMount')
+    })
+    onMounted(() => {
+      console.log('app:onMounted')
+    })
+    onBeforeUpdate(() => {
+      console.log('app:onBeforeUpdate')
+    })
+    onUpdated(() => {
+      console.log('app:onUpdated')
+    })
+    onBeforeUnmount(() => {
+      console.log('app:onBeforeUnmount')
+    })
+    onUnmounted(() => {
+      console.log('app:onUnmounted')
+    })
 
     return { route }
   },
